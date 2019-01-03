@@ -1,9 +1,112 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background_gradient"
     tools:context=".DashBoard">
 
-</android.support.constraint.ConstraintLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Student Dash Board"
+        android:textColor="#FFF"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/tvEmail" />
+
+
+    <Button
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Students"
+        android:id="@+id/add_stu"
+        android:onClick="add_btn"
+        style="@style/Base.TextAppearance.AppCompat.Body1"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/background_login"
+        android:padding="16dp"
+        android:textAllCaps="false"
+        android:textColor="@color/startRed"
+        android:textSize="18sp"
+        android:layout_marginHorizontal="20dp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="View Students"
+        android:id="@+id/view_stu"
+        android:onClick="view_data"
+        style="@style/Base.TextAppearance.AppCompat.Body1"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/background_login"
+        android:padding="16dp"
+        android:textAllCaps="false"
+        android:textColor="@color/startRed"
+        android:textSize="18sp"
+        android:layout_marginHorizontal="20dp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Attandance Per Student"
+        android:onClick="attandance"
+        style="@style/Base.TextAppearance.AppCompat.Body1"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/background_login"
+        android:padding="16dp"
+        android:textAllCaps="false"
+        android:textColor="@color/startRed"
+        android:textSize="18sp"
+        android:layout_marginHorizontal="20dp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Faculty"
+        android:onClick="add_faculty_Member"
+        style="@style/Base.TextAppearance.AppCompat.Body1"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/background_login"
+        android:padding="16dp"
+        android:textAllCaps="false"
+        android:textColor="@color/startRed"
+        android:textSize="18sp"
+        android:layout_marginHorizontal="20dp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="View Faculty"
+        android:onClick="view_faculty_Member"
+        style="@style/Base.TextAppearance.AppCompat.Body1"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/background_login"
+        android:padding="16dp"
+        android:textAllCaps="false"
+        android:textColor="@color/startRed"
+        android:textSize="18sp"
+        android:layout_marginHorizontal="20dp" />
+
+    <Button
+        android:id="@+id/btnLogout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Logout"
+        android:layout_alignParentBottom="true"
+        style="@style/Base.TextAppearance.AppCompat.Body1"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/background_login"
+        android:padding="16dp"
+        android:textAllCaps="false"
+        android:textColor="@color/startRed"
+        android:textSize="18sp"
+        android:layout_marginHorizontal="20dp" />
+
+</LinearLayout>
